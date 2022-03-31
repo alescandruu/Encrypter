@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="encrypter">
+        <img src="images/top.png" class="topImage">
+        <div class="logoName">
+            <img src="images/logo1.png" class="logo">
+            <h1 class="name">CIPHER</h1>
+        </div>
+        <div class="form">
+            <div class="formInputs">
+                <label>MESSAGE</label>
+                <input  id="messageInput" oninput = "changeRobot()" oni>
+                <label>KEY</label>
+                <input id="keyInput" oninput = "changeRobot()">
+            </div>
+            <div class="formButtons">
+                <button class="buttons" onclick="showMessage('encrypt')">ENCRYPT</button>
+                <button class="buttons" onclick="showMessage('decrypt')">DECRYPT</button>
+            </div>
+            <div class="formResult">
+                <label>RESULT</label>
+                <p id="resultContainer"></p>
+            <button class="buttons" onclick="copyToClipboard()">COPY</button>
+            </div>
+        </div>
+        <img src="images/robot1.png" class="robot1" id="helloRobot">
+        <img src="images/robot2.png" class="robot2" id="searchingRobot">
+        <img src="images/robot3.png" class="robot3" id="resultRobot">
+        <img src="images/bottom.png" class="bottomImage">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
